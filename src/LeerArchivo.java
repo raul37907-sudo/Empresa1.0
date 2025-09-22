@@ -29,9 +29,9 @@ public class LeerArchivo {
 			  
 		 crearPersonalAreas (listEmpleados,listGerentes,listAreas);
 		
-		 for(String noAsignados :listNoAsignados) {
+		// for(String ithem :listNoAsignados) {
 			//System.out.println(noAsignados );
-		}
+		//}
 	}
 	public static void crearPersonalAreas (List<String>fileEmpleados,List<String>fileGerentes,List<String>fileAreas) {
 		List<Empleado> listEmpleados = new ArrayList<>();

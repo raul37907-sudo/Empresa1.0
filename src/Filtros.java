@@ -20,11 +20,11 @@ public class Filtros {
 				switch(opcion) {
 				case 1:
 					System.out.println("BUSCANDO  EMPLEADO");
-					buscarEmpleado(listEmpresaCompleta);					
+					buscarEmpleado(entraDato,listEmpresaCompleta);					
 					break;
 				case 2:
 					System.out.println("BUSCANDO  GERENTE ");
-					buscarGerente(listEmpresaCompleta);
+					buscarGerente(entraDato,listEmpresaCompleta);
 					
 					break;
 				case 3:
@@ -39,10 +39,8 @@ public class Filtros {
 		   }
 	}
 	
-	public static void buscarEmpleado (List<Area>listEmpresaCompleta) {
-		Scanner entraDato = new Scanner (System.in);
+	public static void buscarEmpleado (Scanner entraDato,List<Area>listEmpresaCompleta) {
 		List<Empleado> listBuscar = new ArrayList<>();
-		List<Empleado> salidaEmpleado = new ArrayList <>();
 		String elementoBuscar = "";
 		System.out.println("COMIENZA TU  BUSQUEDA POR NOMBRE " + "\n");	
 		elementoBuscar = entraDato.next();
@@ -61,8 +59,7 @@ public class Filtros {
 		System.out.println(listBuscar);
 	}
 	
-	public static void buscarGerente (List<Area>listEmpresaCompleta) {
-			Scanner entraDato = new Scanner (System.in);
+	public static void buscarGerente (Scanner entraDato,List<Area>listEmpresaCompleta) {
 			List<Gerente> listBuscar = new ArrayList<>();
 			String elementoBuscar = "";
 			System.out.println("COMIENZA TU  BUSQUEDA POR NOMBRE  " + "\n ");	
